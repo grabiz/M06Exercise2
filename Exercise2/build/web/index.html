@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Get Information from form and display</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <form id="form1" action="form1" method="get">
+            <input type="checkbox" name="addMail" value="Yes" checked> Yes, add me to your mailing list.<p></p>
+            Contact me by:<br>
+            <input type="radio" name="contact" value="Email">Email<br>
+            <input type="radio" name="contact" value="Postal mail">Postal mail<br>
+            <input type="radio" name="contact" value="Both" checked>Both<p></p>
+            I'm interested in these types of music:<br>
+            <input type="checkbox" name="typeOfMusic" value="Rock">Rock<br>
+            <input type="checkbox" name="typeOfMusic" value="Country">Country<br>
+            <input type="checkbox" name="typeOfMusic" value="Bluegrass">Bluegrass
+            <p></p>
+            <input type="submit" value="Submit">
+        </form>
+        <form id="form2" action="form2" method="get">
+            Style:<br>
+            <select name="isStyle">
+                <optgroup label="The New Yorker"></optgroup>
+                <option  value="10&CloseCurlyDoubleQuote;" selected>&nbsp;10"</option>
+                <option  value="12&CloseCurlyDoubleQuote;">&nbsp;12"</option>
+                <option  value="16&CloseCurlyDoubleQuote;">&nbsp;16"</option>
+                <optgroup label="The Chicago"></optgroup>
+                <option value="10&CloseCurlyDoubleQuote;">&nbsp;10"</option>
+                <option value="12&CloseCurlyDoubleQuote;">&nbsp;12"</option>
+                <option value="16&CloseCurlyDoubleQuote;">&nbsp;16"</option>
+            </select>
+            <p></p>
+            <input type="submit" value="Submit">
+        </form>
+        <form id="form3" action="form3" method="get">
+            <fieldset>
+                <legend>Crust</legend>
+                <input type="radio" name="crust" value="Thin Crust">Thin Crust<br>
+                <input type="radio" name="crust" value="Deep Dish">Deep Dish<br>
+                <input type="radio" name="crust" value="Hand Tossed">Hand Tossed<br>
+            </fieldset><p></p>
+            <fieldset>
+                <legend>Toppings</legend>
+                <input type="radio" name="toppings" value="Pepperoni">Pepperoni<br>
+                <input type="radio" name="toppings" value="Mushrooms">Mushrooms<br>
+                <input type="radio" name="toppings" value="Black Olives">Black Olives<br>
+            </fieldset> <p></p>
+            <input type="submit" value="Submit">
+        </form>
+        <form id="form4" action="form4" method="post">
+            Quantity:&nbsp;&nbsp;&nbsp;<input class="left" type="number" name="quantity" placeholder="1"><p></p>
+            Username:<input class="left" type="text" name="userName" autofocus><p></p>
+            Password:<input class="left" type="password" name="password" placeholder="Enter your password"><p></p>
+            Hidden:<input class="left" type="hidden" name="hidden"><p></p>
+            <input type="submit" value="Submit">
+        </form>
+        <form id="form5" action="form5" method="post">
+            <h1>Session login email</h1><p></p>
+            <label for="enterEmail">Email:</label><input type="email" name="enterEmail" id="enterEmail">
+            <input type="submit" name="submit" value="Join now">
+        </form>
+        <form id="form6" action="form6" method="post">
+            <p id="titleHeader" >Login</p>
+            <input class="cover form6left" type="email" name="emailForm6" placeholder="Enter an account name or email"><p></p>
+            <input class="cover form6left" type="password" name="passForm6" placeholder="Password"><p></p>
+            <input class="form6left" type="checkbox" name="remember" value="checked" checked>Remember me
+            <p></p>
+            <input class="form6left" id="button" type="submit" value="LOGIN"> <span>Forgot Password?</span>
+        </form>
+    </body>
+</html>
